@@ -4,10 +4,8 @@
 $(function () {
   $('#hour-9').children('.btn').click(function () {
     //take in value from textarea and push it into localstorage. May need to use and array or object array to give each time stamp its own info.
-
-    let text = $('#hour-9').children('.description');
-    localStorage.setItem('text', text.value);
-    text = localStorage.getItem(text);
+    let text = $("textarea");
+    localStorage.setItem('h9Text', text.value);
 
 
   });
